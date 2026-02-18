@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Abduljawad | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="#home" class="logo">Ibrahim<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact" class="btn-contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+
+        <div class="container hero-content">
+            <div class="image-container">
+                <img src="images/profile.jpg" alt="Ibrahim Abduljawad" class="profile-img">
+            </div>
+            <div class="hero-text">
+    <p class="greeting">Hello, I'm</p>
+    <h1>Ibrahim Abduljawad</h1>
+    <h2 class="designation">Software Engineer | Data Analysis Specialist | Cloud Engineer</h2>
+    
+    <a href="images/cv.pdf" download class="btn-download">
+        Download CV <i class="fas fa-download"></i>
+    </a>
+    
+</div>
+            
+        </div>
+    </header>
+
+    <section class="about container" id="about">
+        <h3 class="section-title">About Me</h3>
+        <div class="about-grid">
+            <div class="about-text-box card-style">
+                <p>
+                    I am a passionate Software Engineer and Data Analyst based in Egypt, currently 20 years old. 
+                    With a strong foundation in Cloud Engineering and practical experience in HR Management, 
+                    I bridge the gap between technical logic and business leadership.
+                </p>
+                <p style="margin-top: 1rem;">
+                    Currently leading HR teams at student activities while mastering Data Science technologies.
+                </p>
+            </div>
+            <div class="personal-details-box card-style">
+                <ul class="details-list">
+                    <li><span class="detail-label">Location:</span> Cairo, Egypt</li>
+                    <li><span class="detail-label">Age:</span> 20 Years</li>
+                    <li><span class="detail-label">Degree:</span> Computer Science (NMU)</li>
+                    <li><span class="detail-label">Email:</span> alma8raby@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume container" id="resume">
+        <h3 class="section-title">My Resume</h3>
+        
+        <div class="resume-grid">
+            <div class="resume-column">
+                <h4 class="resume-heading"><i class="fas fa-graduation-cap"></i> Education</h4>
+                
+                <div class="resume-item card-style">
+                    <span class="date">2024 - Present</span>
+                    <h4>B.Sc. in Computer Science</h4>
+                    <span class="institution">New Mansoura University (NMU)</span>
+                    <p>Focusing on Algorithms, Data Structures, Software Engineering, and Cloud Computing basics.</p>
+                </div>
+
+<div class="resume-item card-style">
+                    <span class="date">Nov 2025 - Present</span>
+                    <h4>Data Analysis Trainee</h4>
+                    <span class="institution">Digital Egypt Pioneers Initiative (DEPI)</span>
+                    <p>Analyzing large-scale datasets, mastering Excel & Power Query, and developing soft skills for professional environments.</p>
+                </div>               
+            </div>
+
+            <div class="resume-column">
+                <h4 class="resume-heading"><i class="fas fa-briefcase"></i> Experience</h4>
+                
+                 <div class="resume-item card-style">
+                    <span class="date">Nov 2025</span>
+                    <h4>Full Stack Development</h4>
+                    <span class="institution">Creativa Innovation Hubs</span>
+                    <p>Completed an intensive 100-hour training program covering modern web technologies.</p>
+                </div>
+
+                <div class="resume-item card-style">
+                    <span class="date">2024 - Present</span>
+                    <h4>Head of HR Team</h4>
+                    <span class="institution">MSC-NMU (Microsoft Student Club)</span>
+                    <p>Leading the HR committee, managing recruitment processes, interviewing candidates, and organizing team-building activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio container" id="portfolio">
+        <h3 class="section-title">Featured Projects</h3>
+        <div class="projects-grid">
+            
+            <div class="project-card card-style">
+                <div class="card-content">
+                    <h4>Energy Consumption Dashboard</h4>
+                    <p>Analyzed energy datasets using Power Query for cleaning and Power Pivot for modeling. Created an interactive dashboard.</p>
+                    <div class="tags">
+                        <span>Excel</span> <span>Power Query</span> <span>Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card card-style">
+                <div class="card-content">
+                    <h4>Baby Crying Detector</h4>
+                    <p>IoT project using Arduino and sound sensors to detect baby crying patterns, integrating hardware logic with C#.</p>
+                    <div class="tags">
+                        <span>Arduino</span> <span>C#</span> <span>IoT</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card card-style">
+                <div class="card-content">
+                    <h4>Superstore Analysis</h4>
+                    <p>Normalized a retail dataset into a relational model and built a performance tracking dashboard to identify sales trends.</p>
+                    <div class="tags">
+                        <span>SQL</span> <span>Data Modeling</span> <span>Statistics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card card-style">
+                <div class="card-content">
+                    <h4>Smart Dictionary App</h4>
+                    <p>
+                        Developed a dynamic dictionary web app using the <strong>Free Dictionary API</strong>. 
+                        Users can search for words to get definitions, synonyms, examples, and listen to audio pronunciation.
+                    </p>
+                    <div class="tags">
+                        <span>C#</span>
+                        <span>OOP</span>
+                        <span>Data Structure</span>
+                        <span>Noodle DB</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="project-card card-style">
+                <div class="card-content">
+                    <h4>AI & Data Research</h4>
+                    <p>Authored a research paper exploring the symbiotic relationship between Artificial Intelligence and Big Data.</p>
+                    <div class="tags">
+                        <span>Research</span> <span>AI</span> <span>Academic Writing</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="tech-stack container" id="skills">
+        <h3 class="section-title">Tech Stack</h3>
+        <div class="stack-flex">
+            <span class="tech-badge">C#</span>
+            <span class="tech-badge">R Programming</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge react">ReactJS</span>
+            <span class="tech-badge next">NextJS</span>
+            <span class="tech-badge">NodeJS</span>
+            <span class="tech-badge tailwind">TailwindCSS</span>
+            <span class="tech-badge">Excel (Advanced)</span>
+            <span class="tech-badge">Power Query</span>
+            <span class="tech-badge">SQL</span>
+            <span class="tech-badge git">Git</span>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h3 class="section-title">Get In Touch</h3>
+            <p class="contact-desc">
+                Feel free to reach out for collaborations, job opportunities, or just a chat about technology and data.
+            </p>
+            
+            <div class="contact-wrapper card-style">
+                <div class="contact-info-grid">
+                    
+                    <div class="contact-box">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <a href="mailto:alma8raby@gmail.com">alma8raby@gmail.com</a>
+                    </div>
+
+                    <div class="contact-box">
+                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                        <h4>Phone</h4>
+                        <a href="tel:+201028934568">+20 102 893 4568</a>
+                    </div>
+
+                    <div class="contact-box">
+                        <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/alma8raby" target="_blank">Connect on LinkedIn</a>
+                    </div>
+
+                    <div class="contact-box">
+                        <div class="icon"><i class="fab fa-github"></i></div>
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/alma8raby" target="_blank">View Portfolio</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Designed & Built by <strong>Ibrahim Abduljawad</strong> © 2026</p>
+    </footer>
+
+</body>
+</html>

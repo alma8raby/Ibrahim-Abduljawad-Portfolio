@@ -1,0 +1,494 @@
+/* =========================================
+   1. CORE VARIABLES & RESET
+   ========================================= */
+:root {
+    /* Color Palette */
+    --bg-main: #0a0f1c;         /* Dark Navy Background */
+    --bg-secondary: #111827;    /* Slightly Lighter Navy */
+    --card-gradient: linear-gradient(145deg, #1f2937, #161f2e);
+    
+    --text-primary: #f9fafb;    /* High Contrast White */
+    --text-secondary: #9ca3af;  /* Muted Grey */
+    
+    --accent: #3b82f6;          /* Bright Blue */
+    --accent-hover: #60a5fa;
+    --accent-glow: rgba(59, 130, 246, 0.25);
+    
+    /* Spacing System */
+    --section-padding: 120px;   /* Increased for breathing room */
+    --card-padding: 35px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Offset for fixed navbar */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-secondary);
+    line-height: 1.8; /* Increased line-height for readability */
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1150px; /* Slightly wider container */
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+/* =========================================
+   2. UI COMPONENTS (Cards & Global)
+   ========================================= */
+.card-style {
+    background: var(--card-gradient);
+    padding: var(--card-padding);
+    border-radius: 20px; /* Softer corners */
+    border: 1px solid #2d3748;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-style:hover {
+    border-color: var(--accent);
+    transform: translateY(-7px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-bottom: 70px; /* More space below titles */
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: var(--accent);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+section {
+    padding: var(--section-padding) 0;
+}
+
+section:nth-child(even) {
+    background-color: var(--bg-secondary);
+}
+
+/* =========================================
+   3. NAVBAR
+   ========================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(10, 15, 28, 0.9); /* More opacity */
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 18px 0;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--text-primary);
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.logo span { color: var(--accent); }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+.btn-contact {
+    border: 1px solid var(--accent);
+    padding: 10px 24px;
+    border-radius: 8px;
+    color: var(--accent) !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: var(--accent);
+    color: #fff !important;
+}
+
+/* =========================================
+   4. HERO SECTION
+   ========================================= */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px; /* Prevent navbar overlap */
+    background: radial-gradient(circle at 50% 50%, #1a2235 0%, var(--bg-main) 100%);
+}
+
+.hero-content { text-align: center; }
+
+.image-container {
+    margin-bottom: 35px;
+    position: relative;
+    display: inline-block;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent);
+    padding: 5px;
+    background: var(--bg-main);
+    box-shadow: 0 0 40px var(--accent-glow);
+}
+
+.greeting {
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.hero h1 {
+    font-size: 3.8rem;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.designation {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   5. ABOUT SECTION
+   ========================================= */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px; /* Increased gap */
+    align-items: start;
+}
+
+.about-text-box p { margin-bottom: 15px; }
+
+.details-list { list-style: none; }
+
+.details-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid #2d3748;
+}
+
+.details-list li:last-child { border-bottom: none; }
+
+.detail-label {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* =========================================
+   6. RESUME SECTION (Improved Spacing)
+   ========================================= */
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Minimum width increased */
+    gap: 60px;
+}
+
+.resume-heading {
+    color: var(--text-primary);
+    font-size: 1.6rem;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.resume-heading i { color: var(--accent); }
+
+.resume-item {
+    margin-bottom: 30px;
+    position: relative;
+    border-left: 5px solid var(--accent);
+    padding: 30px; /* More internal breathing room */
+}
+
+.resume-item .date {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: var(--accent);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 15px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.resume-item h4 {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.resume-item .institution {
+    color: #e2e8f0;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.resume-item p { color: #94a3b8; font-size: 0.95rem; }
+
+/* =========================================
+   7. PROJECTS SECTION
+   ========================================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px; /* Clearer separation between projects */
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.project-card h4 {
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.project-card p {
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.tags {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    background-color: var(--bg-main);
+    color: var(--accent);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* =========================================
+   8. TECH STACK & FOOTER
+   ========================================= */
+.stack-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.tech-badge {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 12px 30px;
+    border-radius: 100px;
+    border: 1px solid #2d3748;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.tech-badge:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-5px);
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+/* =========================================
+   9. CONTACT SECTION (Centered & Clean)
+   ========================================= */
+.contact-desc {
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+}
+
+.contact-wrapper {
+    /* Main container for contact info */
+    background: linear-gradient(145deg, #161f2e, #111827);
+    padding: 60px 40px;
+    border-radius: 20px;
+    border: 1px solid #1f2937;
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 50px;
+    text-align: center;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-box .icon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(59, 130, 246, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--accent);
+    margin-bottom: 10px;
+    transition: 0.4s ease;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.contact-box:hover .icon {
+    background-color: var(--accent);
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.contact-box h4 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.contact-box a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contact-box a:hover {
+    color: var(--accent);
+}
+
+/* =========================================
+   10. FOOTER & MEDIA QUERIES
+   ========================================= */
+footer {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 0.95rem;
+    background-color: var(--bg-secondary);
+    border-top: 1px solid #1f2937;
+    margin-top: 100px;
+}
+
+footer strong { color: var(--accent); }
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 900px) {
+    .hero h1 { font-size: 2.8rem; }
+    .about-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; } /* Hide menu on small screens for simplicity */
+    .navbar { justify-content: center; }
+    .nav-flex { justify-content: center; }
+    .contact-info-grid { grid-template-columns: 1fr; gap: 40px; }
+    
+    .container { padding: 0 20px; }
+    section { padding: 80px 0; }
+
+}
+
+/* --- زر تحميل الـ CV --- */
+.btn-download {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 35px;
+    background-color: var(--accent); /* اللون الأزرق */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 50px; /* حواف دائرية */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px var(--accent-glow); /* توهج خفيف */
+    border: 2px solid var(--accent);
+}
+
+.btn-download:hover {
+    background-color: transparent; /* يفرغ اللون عند الماوس */
+    color: var(--accent);
+    transform: translateY(-3px); /* يرتفع قليلاً */
+    box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+.btn-download i {
+    margin-left: 8px; /* مسافة بين الكلمة والأيقونة */
+}
