@@ -3,236 +3,466 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibrahim Abduljawad | Portfolio</title>
+    <title>Ibrahim Abduljawad | Data Analyst for Dashboards, Reporting &amp; Web Solutions</title>
+    <meta
+        name="description"
+        content="Ibrahim Abduljawad is a Data Analyst trainee and Computer Science student helping clients turn data into clear reports, dashboards, and lightweight web solutions."
+    >
+    <meta name="theme-color" content="#E6F1FB">
+    <meta property="og:title" content="Ibrahim Abduljawad | Data Analyst for Dashboards, Reporting &amp; Web Solutions">
+    <meta
+        property="og:description"
+        content="Explore Ibrahim Abduljawad's projects, services, social proof, and contact details for freelance-ready data and web work."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:locale" content="en_US">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <nav class="navbar">
-        <div class="container nav-flex">
-            <a href="#home" class="logo">Ibrahim<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact" class="btn-contact">Contact Me</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="hero" id="home">
-
-        <div class="container hero-content">
-            <div class="image-container">
-                <img src="images/profile.jpg" alt="Ibrahim Abduljawad" class="profile-img">
+    <header class="site-header" id="top">
+        <nav class="navbar" aria-label="Primary">
+            <div class="container nav-shell">
+                <a href="#top" class="brand-mark" aria-label="Ibrahim Abduljawad home">
+                    <span class="brand-name">Ibrahim.</span>
+                    <span class="brand-role">Data Analyst + Reporting</span>
+                </a>
+                <div class="nav-actions">
+                    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+                        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false"><path d="M12 4.75a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V5.5a.75.75 0 0 1 .75-.75Zm0 11.5a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V17a.75.75 0 0 1 .75-.75Zm7.25-5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1 0-1.5h1.5Zm-13 0a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1 0-1.5h1.5Zm9.485-4.235a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06Zm-9.53 9.53a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06Zm10.59 1.06a.75.75 0 0 1 1.06-1.06l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06Zm-9.53-9.53a.75.75 0 0 1 1.06-1.06l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06ZM12 8.25A3.75 3.75 0 1 1 8.25 12 3.75 3.75 0 0 1 12 8.25Z" /></svg>
+                        </span>
+                        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false"><path d="M11.5 2.02a.75.75 0 0 1 .35 1.43 7.5 7.5 0 1 0 8.7 8.7.75.75 0 0 1 1.43.35A9 9 0 1 1 11.5 2.02Z" /></svg>
+                        </span>
+                    </button>
+                    <button
+                        class="menu-toggle"
+                        type="button"
+                        data-menu-toggle
+                        aria-expanded="false"
+                        aria-controls="site-menu"
+                        aria-label="Open menu"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="nav-panel" id="site-menu" data-menu-panel>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#toolkit">Services</a></li>
+                        <li><a href="#contact" class="nav-link--cta">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="hero-text">
-    <p class="greeting">Hello, I'm</p>
-    <h1>Ibrahim Abduljawad</h1>
-    <h2 class="designation">Software Engineer | Data Analysis Specialist | Cloud Engineer</h2>
-    
-    <a href="images/cv.pdf" download class="btn-download">
-        Download CV <i class="fas fa-download"></i>
-    </a>
-    
-</div>
-            
-        </div>
+        </nav>
+
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Data analyst with a data engineering mindset</p>
+                    <h1 class="hero-name">Ibrahim Abduljawad</h1>
+                    <span class="hero-name-divider" aria-hidden="true"></span>
+                    <h2 class="hero-title">I turn raw data into clear decisions, practical dashboards, and reports teams can use with confidence.</h2>
+                    <p class="hero-intro">
+                        I work with Python, SQL, Excel, Power BI, and Tableau to build clear analysis,
+                        structured reporting, and practical data work that supports better decisions.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button--primary" href="#contact">Work with me</a>
+                        <a class="button button--secondary" href="images/cv.pdf" download>Download CV</a>
+                    </div>
+                    <p class="hero-availability">Available for freelance projects</p>
+                    <ul class="hero-metrics" aria-label="Professional highlights">
+                        <li>
+                            <span class="metric-value">Python + SQL</span>
+                            <span class="metric-label">Analysis, cleaning, and problem solving</span>
+                        </li>
+                        <li>
+                            <span class="metric-value">DEPI Trainee</span>
+                            <span class="metric-label">Selected in a competitive MCIT-backed program</span>
+                        </li>
+                        <li>
+                            <span class="metric-value">4000+ Followers</span>
+                            <span class="metric-label">Active LinkedIn content about data work</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero-aside">
+                    <article class="profile-card">
+                        <div class="profile-card__media">
+                            <img src="images/profile.jpg" alt="Portrait of Ibrahim Abduljawad" class="profile-image">
+                        </div>
+                        <div class="profile-card__body">
+                            <p class="panel-label">Current focus</p>
+                            <h2>Helping people move from messy data to clearer decisions.</h2>
+                            <p>
+                                Strong in structured thinking, practical communication, and building work
+                                that feels useful, understandable, and dependable.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </header>
 
-    <section class="about container" id="about">
-        <h3 class="section-title">About Me</h3>
-        <div class="about-grid">
-            <div class="about-text-box card-style">
-                <p>
-                    I am a passionate Software Engineer and Data Analyst based in Egypt, currently 20 years old. 
-                    With a strong foundation in Cloud Engineering and practical experience in HR Management, 
-                    I bridge the gap between technical logic and business leadership.
-                </p>
-                <p style="margin-top: 1rem;">
-                    Currently leading HR teams at student activities while mastering Data Science technologies.
-                </p>
-            </div>
-            <div class="personal-details-box card-style">
-                <ul class="details-list">
-                    <li><span class="detail-label">Location:</span> Cairo, Egypt</li>
-                    <li><span class="detail-label">Age:</span> 20 Years</li>
-                    <li><span class="detail-label">Degree:</span> Computer Science (NMU)</li>
-                    <li><span class="detail-label">Email:</span> alma8raby@gmail.com</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="resume container" id="resume">
-        <h3 class="section-title">My Resume</h3>
-        
-        <div class="resume-grid">
-            <div class="resume-column">
-                <h4 class="resume-heading"><i class="fas fa-graduation-cap"></i> Education</h4>
-                
-                <div class="resume-item card-style">
-                    <span class="date">2024 - Present</span>
-                    <h4>B.Sc. in Computer Science</h4>
-                    <span class="institution">New Mansoura University (NMU)</span>
-                    <p>Focusing on Algorithms, Data Structures, Software Engineering, and Cloud Computing basics.</p>
+    <main id="main-content">
+        <section class="section section--proof" aria-labelledby="proof-title">
+            <div class="container section-shell">
+                <div class="section-heading section-heading--compact">
+                    <p class="section-kicker">Social proof</p>
+                    <h2 id="proof-title">Signals that build trust before the first conversation.</h2>
                 </div>
-
-<div class="resume-item card-style">
-                    <span class="date">Nov 2025 - Present</span>
-                    <h4>Data Analysis Trainee</h4>
-                    <span class="institution">Digital Egypt Pioneers Initiative (DEPI)</span>
-                    <p>Analyzing large-scale datasets, mastering Excel & Power Query, and developing soft skills for professional environments.</p>
-                </div>               
-            </div>
-
-            <div class="resume-column">
-                <h4 class="resume-heading"><i class="fas fa-briefcase"></i> Experience</h4>
-                
-                 <div class="resume-item card-style">
-                    <span class="date">Nov 2025</span>
-                    <h4>Full Stack Development</h4>
-                    <span class="institution">Creativa Innovation Hubs</span>
-                    <p>Completed an intensive 100-hour training program covering modern web technologies.</p>
-                </div>
-
-                <div class="resume-item card-style">
-                    <span class="date">2024 - Present</span>
-                    <h4>Head of HR Team</h4>
-                    <span class="institution">MSC-NMU (Microsoft Student Club)</span>
-                    <p>Leading the HR committee, managing recruitment processes, interviewing candidates, and organizing team-building activities.</p>
+                <div class="proof-grid">
+                    <article class="panel proof-card">
+                        <p class="panel-label">Audience</p>
+                        <p class="proof-value">4000+</p>
+                        <p>LinkedIn followers from sharing clear content about data, analysis, and practical learning.</p>
+                    </article>
+                    <article class="panel proof-card">
+                        <p class="panel-label">Competitive selection</p>
+                        <p class="proof-value">DEPI</p>
+                        <p>Chosen as a Data Analysis Specialist in the Digital Egypt Pioneers Initiative.</p>
+                    </article>
+                    <article class="panel proof-card">
+                        <p class="panel-label">Available for freelance work</p>
+                        <p class="proof-value">Freelance Ready</p>
+                        <p>Open to freelance projects, practical reporting support, and client-focused data work.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="portfolio container" id="portfolio">
-        <h3 class="section-title">Featured Projects</h3>
-        <div class="projects-grid">
-            
-            <div class="project-card card-style">
-                <div class="card-content">
-                    <h4>Energy Consumption Dashboard</h4>
-                    <p>Analyzed energy datasets using Power Query for cleaning and Power Pivot for modeling. Created an interactive dashboard.</p>
-                    <div class="tags">
-                        <span>Excel</span> <span>Power Query</span> <span>Data Analysis</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card card-style">
-                <div class="card-content">
-                    <h4>Baby Crying Detector</h4>
-                    <p>IoT project using Arduino and sound sensors to detect baby crying patterns, integrating hardware logic with C#.</p>
-                    <div class="tags">
-                        <span>Arduino</span> <span>C#</span> <span>IoT</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card card-style">
-                <div class="card-content">
-                    <h4>Superstore Analysis</h4>
-                    <p>Normalized a retail dataset into a relational model and built a performance tracking dashboard to identify sales trends.</p>
-                    <div class="tags">
-                        <span>SQL</span> <span>Data Modeling</span> <span>Statistics</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card card-style">
-                <div class="card-content">
-                    <h4>Smart Dictionary App</h4>
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container section-shell">
+                <div class="section-heading">
+                    <p class="section-kicker">About</p>
+                    <h2 id="about-title">Analytical thinking, clear communication, and work people can actually use.</h2>
                     <p>
-                        Developed a dynamic dictionary web app using the <strong>Free Dictionary API</strong>. 
-                        Users can search for words to get definitions, synonyms, examples, and listen to audio pronunciation.
+                        I enjoy taking information that feels messy or difficult to read and turning it into
+                        something structured, clear, and useful. That might be a report, a dashboard, or a
+                        simple web experience that helps someone act with more confidence.
                     </p>
-                    <div class="tags">
-                        <span>C#</span>
-                        <span>OOP</span>
-                        <span>Data Structure</span>
-                        <span>Noodle DB</span>
+                </div>
+                <div class="about-grid">
+                    <article class="panel panel--feature">
+                        <p class="panel-label">Professional profile</p>
+                        <p class="lead">
+                            I'm a Computer Science student with a strong interest in Data Analysis, combining
+                            technical foundations with a structured mindset and an eye for clarity.
+                        </p>
+                        <p>
+                            I care about reliable delivery, thoughtful communication, and making technical
+                            work easier for people to understand. I also build my personal brand actively
+                            through LinkedIn content, which keeps me close to real questions in SQL and data work.
+                        </p>
+                    </article>
+                    <div class="value-stack">
+                        <article class="panel value-card">
+                            <p class="panel-label">What I bring</p>
+                            <h3>Analytical clarity</h3>
+                            <p>Turning raw datasets into cleaner reporting, structured analysis, and clearer decisions.</p>
+                        </article>
+                        <article class="panel value-card">
+                            <p class="panel-label">Engineering mindset</p>
+                            <h3>Practical execution</h3>
+                            <p>Building lightweight solutions that are usable, maintainable, and easy to follow.</p>
+                        </article>
+                        <article class="panel value-card">
+                            <p class="panel-label">Working style</p>
+                            <h3>Reliable collaboration</h3>
+                            <p>Communicating clearly, staying organized, and being dependable to work with.</p>
+                        </article>
                     </div>
-                    
                 </div>
             </div>
+        </section>
 
-            <div class="project-card card-style">
-                <div class="card-content">
-                    <h4>AI & Data Research</h4>
-                    <p>Authored a research paper exploring the symbiotic relationship between Artificial Intelligence and Big Data.</p>
-                    <div class="tags">
-                        <span>Research</span> <span>AI</span> <span>Academic Writing</span>
+        <section class="section section--tint" id="projects" aria-labelledby="projects-title">
+            <div class="container section-shell">
+                <div class="section-heading">
+                    <p class="section-kicker">Selected work</p>
+                    <h2 id="projects-title">Projects that show how I turn technical work into something useful.</h2>
+                    <p>
+                        These projects are meant to show more than tools. Each one reflects a practical
+                        problem, a clearer outcome, and a way of presenting information people can act on.
+                    </p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card panel">
+                        <div class="project-card__top">
+                            <p class="panel-label">Dashboard project</p>
+                            <h3>Energy Consumption Dashboard</h3>
+                            <p>
+                                Built a clear Excel dashboard for energy data using modeling, KPIs, and
+                                interactive filters so users can compare usage faster, track KPIs clearly, and make better reporting decisions.
+                            </p>
+                        </div>
+                        <div class="project-card__meta">
+                            <ul class="tag-list" aria-label="Project technologies">
+                                <li>Excel</li>
+                                <li>Power Query</li>
+                                <li>Power Pivot</li>
+                                <li>Data Modeling</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a class="button button--ghost" href="#contact">View Details</a>
+                                <a class="button button--text" href="#contact">Start a project</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card panel">
+                        <div class="project-card__top">
+                            <p class="panel-label">Healthcare analysis</p>
+                            <h3>Patient No-Show Analysis</h3>
+                            <p>
+                                Used Python EDA to study why patients miss appointments. I analyzed waiting
+                                time, age, and SMS reminders to find patterns that support better scheduling, clearer insights, and smarter planning.
+                            </p>
+                        </div>
+                        <div class="project-card__meta">
+                            <ul class="tag-list" aria-label="Project technologies">
+                                <li>Pandas</li>
+                                <li>Matplotlib</li>
+                                <li>Seaborn</li>
+                                <li>Python</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a class="button button--ghost" href="#contact">View Details</a>
+                                <a class="button button--text" href="#contact">Start a project</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card panel">
+                        <div class="project-card__top">
+                            <p class="panel-label">Data cleaning</p>
+                            <h3>Medical Data Cleaning with Python</h3>
+                            <p>
+                                Cleaned a messy medical dataset step by step by checking nulls, duplicates,
+                                and wrong data types. The result was improved data quality and a cleaner base for more reliable analysis.
+                            </p>
+                        </div>
+                        <div class="project-card__meta">
+                            <ul class="tag-list" aria-label="Project technologies">
+                                <li>Python</li>
+                                <li>Pandas</li>
+                                <li>Data Cleaning</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a class="button button--ghost" href="#contact">View Details</a>
+                                <a class="button button--text" href="#contact">Start a project</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card panel">
+                        <div class="project-card__top">
+                            <p class="panel-label">SQL database project</p>
+                            <h3>SQL Sales Database &amp; Analysis</h3>
+                            <p>
+                                Designed a relational sales database with customers, vehicles, transactions,
+                                and dealerships, then wrote queries that answer useful business questions with clearer sales insight and faster reporting.
+                            </p>
+                        </div>
+                        <div class="project-card__meta">
+                            <ul class="tag-list" aria-label="Project technologies">
+                                <li>SQL</li>
+                                <li>PK/FK</li>
+                                <li>Relational Design</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a class="button button--ghost" href="#contact">View Details</a>
+                                <a class="button button--text" href="#contact">Start a project</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience" aria-labelledby="experience-title">
+            <div class="container section-shell">
+                <div class="section-heading">
+                    <p class="section-kicker">Experience snapshot</p>
+                    <h2 id="experience-title">Experience that supports both analytical work and client trust.</h2>
+                </div>
+                <div class="experience-grid">
+                    <article class="panel timeline-card">
+                        <p class="panel-label">Education &amp; training</p>
+                        <div class="timeline-list">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2024 - Present</span>
+                                <h3>B.Sc. Computer Science &amp; Engineering</h3>
+                                <p class="timeline-place">New Mansoura University</p>
+                                <p>Building strong fundamentals in computing while growing toward BI, analytics, and data-driven decision making.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2023 - 2024</span>
+                                <h3>B.Com (English Section)</h3>
+                                <p class="timeline-place">Al-Azhar University</p>
+                                <p>Added early business-oriented context that supports communication and practical thinking around data.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">Nov 2025 - Present</span>
+                                <h3>Data Analysis Trainee</h3>
+                                <p class="timeline-place">Digital Egypt Pioneers Initiative · Hybrid Internship</p>
+                                <p>Selected as a Data Analysis Specialist in a competitive national program, strengthening practical work in SQL, Excel, and reporting.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="panel timeline-card">
+                        <p class="panel-label">Experience &amp; leadership</p>
+                        <div class="timeline-list">
+                            <div class="timeline-item">
+                                <span class="timeline-date">Jul - Oct 2025</span>
+                                <h3>Full Stack Intern</h3>
+                                <p class="timeline-place">Creativa Innovation Hub</p>
+                                <p>Completed hands-on training in web development, strengthening implementation skills across frontend and full stack workflows.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2026 - Present</span>
+                                <h3>Head of HR Team</h3>
+                                <p class="timeline-place">MSC-NMU</p>
+                                <p>Leading recruitment and team coordination, building practical experience in responsibility, communication, and people management.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2025 - 2026</span>
+                                <h3>Vice Head HR</h3>
+                                <p class="timeline-place">MSC-NMU</p>
+                                <p>Supported hiring and internal coordination, creating a clear progression into leadership responsibility.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2023 - 2024</span>
+                                <h3>IEEE Member</h3>
+                                <p class="timeline-place">Al-Azhar</p>
+                                <p>Stayed engaged in technical communities while building early professional exposure and network awareness.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--tint" id="toolkit" aria-labelledby="toolkit-title">
+            <div class="container section-shell">
+                <div class="section-heading">
+                    <p class="section-kicker">Services</p>
+                    <h2 id="toolkit-title">What I can help you with.</h2>
+                    <p>
+                        I focus on useful deliverables that help people understand data better, present information more clearly, and improve simple digital experiences.
+                    </p>
+                </div>
+                <div class="services-grid">
+                    <article class="panel service-card">
+                        <p class="panel-label">Reporting</p>
+                        <h3>Dashboards &amp; data reporting</h3>
+                        <p>Clean, readable reporting that helps teams understand performance, trends, and key metrics faster.</p>
+                        <a class="button button--ghost" href="#contact">Start a reporting project</a>
+                    </article>
+                    <article class="panel service-card">
+                        <p class="panel-label">Analysis</p>
+                        <h3>Data cleaning &amp; structured analysis</h3>
+                        <p>Support with organizing datasets, improving clarity, and turning raw information into more useful insights.</p>
+                        <a class="button button--ghost" href="#contact">Discuss your data needs</a>
+                    </article>
+                    <article class="panel service-card">
+                        <p class="panel-label">Web support</p>
+                        <h3>Lightweight web development</h3>
+                        <p>Simple, clean web pages and interfaces that present information clearly and support your digital presence.</p>
+                        <a class="button button--ghost" href="#contact">Talk about web work</a>
+                    </article>
+                </div>
+                <div class="toolkit-layout">
+                    <article class="panel toolkit-panel">
+                        <p class="panel-label">Core strengths</p>
+                        <ul class="capability-list">
+                            <li>Data Analysis</li>
+                            <li>Structured reporting</li>
+                            <li>HTML &amp; CSS implementation</li>
+                            <li>Clear communication and reliability</li>
+                        </ul>
+                    </article>
+                    <article class="panel toolkit-panel">
+                        <p class="panel-label">Current tools</p>
+                        <ul class="tag-list tag-list--large" aria-label="Technical skills">
+                            <li>SQL</li>
+                            <li>Excel</li>
+                            <li>Python</li>
+                            <li>Power BI</li>
+                            <li>Tableau</li>
+                            <li>Data Analysis</li>
+                            <li>Data Cleaning</li>
+                            <li>Data Visualization</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="container section-shell">
+                <div class="contact-banner panel">
+                    <div class="contact-copy">
+                        <p class="section-kicker">Contact</p>
+                        <h2 id="contact-title">Let's make the next step simple.</h2>
+                        <p>
+                            If you need help with reporting, analysis, or a clean web deliverable, send a message and I'll be happy to discuss your project.
+                        </p>
+                        <a class="button button--primary" href="mailto:alma8raby@gmail.com">Start a project</a>
+                    </div>
+                    <div class="contact-details" aria-label="Contact details">
+                        <div class="contact-icons" aria-label="Primary contact links">
+                            <a class="contact-icon" href="mailto:alma8raby@gmail.com" aria-label="Email Ibrahim Abduljawad">
+                                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                                    <path d="M3.75 6.5h16.5A1.75 1.75 0 0 1 22 8.25v7.5a1.75 1.75 0 0 1-1.75 1.75H3.75A1.75 1.75 0 0 1 2 15.75v-7.5A1.75 1.75 0 0 1 3.75 6.5Zm0 1.5a.24.24 0 0 0-.25.25v.2l8.5 5.67 8.5-5.67v-.2a.24.24 0 0 0-.25-.25H3.75Zm16.75 2.26-7.92 5.28a1 1 0 0 1-1.1 0L3.5 10.26v5.49c0 .14.11.25.25.25h16.5a.25.25 0 0 0 .25-.25v-5.49Z" />
+                                </svg>
+                            </a>
+                            <a class="contact-icon" href="tel:+201028934568" aria-label="Call Ibrahim Abduljawad">
+                                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                                    <path d="M6.62 3.5h2.3c.43 0 .81.29.92.7l.9 3.39a1 1 0 0 1-.25.98L8.92 10.1a13.3 13.3 0 0 0 4.98 4.98l1.53-1.57a1 1 0 0 1 .98-.25l3.39.9c.41.11.7.49.7.92v2.3A1.62 1.62 0 0 1 18.88 19 15.38 15.38 0 0 1 5 5.12 1.62 1.62 0 0 1 6.62 3.5Z" />
+                                </svg>
+                            </a>
+                            <a class="contact-icon" href="https://www.linkedin.com/in/alma8raby" target="_blank" rel="noopener noreferrer" aria-label="Visit Ibrahim Abduljawad on LinkedIn">
+                                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                                    <path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.38a1.56 1.56 0 0 1 0 3.12ZM5.7 9.75h2.48v8.55H5.7V9.75Zm4.03 0h2.38v1.17h.03c.33-.63 1.15-1.3 2.37-1.3 2.53 0 3 1.67 3 3.84v4.84h-2.48v-4.29c0-1.02-.02-2.34-1.42-2.34-1.43 0-1.65 1.11-1.65 2.26v4.37H9.73V9.75Z" />
+                                </svg>
+                            </a>
+                            <a class="contact-icon" href="https://github.com/alma8raby" target="_blank" rel="noopener noreferrer" aria-label="Visit Ibrahim Abduljawad on GitHub">
+                                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                                    <path d="M12 2.5a9.5 9.5 0 0 0-3 18.52c.47.08.64-.2.64-.46 0-.22-.01-.96-.01-1.74-2.35.43-2.96-.58-3.15-1.11-.1-.27-.54-1.11-.92-1.33-.31-.17-.75-.6-.01-.61.7-.01 1.2.64 1.37.91.8 1.34 2.08.97 2.59.74.08-.58.31-.97.56-1.19-2.08-.24-4.25-1.04-4.25-4.61 0-1.02.36-1.86.96-2.52-.1-.24-.42-1.21.09-2.52 0 0 .79-.25 2.6.96a8.94 8.94 0 0 1 4.74 0c1.81-1.22 2.6-.96 2.6-.96.51 1.31.19 2.28.09 2.52.6.66.96 1.49.96 2.52 0 3.58-2.18 4.37-4.26 4.61.32.28.6.82.6 1.66 0 1.2-.01 2.16-.01 2.46 0 .25.17.55.64.45A9.5 9.5 0 0 0 12 2.5Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Location</span>
+                            <p>Cairo, Egypt</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
 
+    <footer class="site-footer">
+        <div class="container footer-shell">
+            <p>Ibrahim Abduljawad</p>
+            <p>Data Analyst &amp; Software Engineer</p>
+            <p>&copy; 2026. Designed for a premium personal brand presence.</p>
         </div>
-    </section>
-
-    <section class="tech-stack container" id="skills">
-        <h3 class="section-title">Tech Stack</h3>
-        <div class="stack-flex">
-            <span class="tech-badge">C#</span>
-            <span class="tech-badge">R Programming</span>
-            <span class="tech-badge">JavaScript</span>
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge react">ReactJS</span>
-            <span class="tech-badge next">NextJS</span>
-            <span class="tech-badge">NodeJS</span>
-            <span class="tech-badge tailwind">TailwindCSS</span>
-            <span class="tech-badge">Excel (Advanced)</span>
-            <span class="tech-badge">Power Query</span>
-            <span class="tech-badge">SQL</span>
-            <span class="tech-badge git">Git</span>
-        </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <h3 class="section-title">Get In Touch</h3>
-            <p class="contact-desc">
-                Feel free to reach out for collaborations, job opportunities, or just a chat about technology and data.
-            </p>
-            
-            <div class="contact-wrapper card-style">
-                <div class="contact-info-grid">
-                    
-                    <div class="contact-box">
-                        <div class="icon"><i class="fas fa-envelope"></i></div>
-                        <h4>Email</h4>
-                        <a href="mailto:alma8raby@gmail.com">alma8raby@gmail.com</a>
-                    </div>
-
-                    <div class="contact-box">
-                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
-                        <h4>Phone</h4>
-                        <a href="tel:+201028934568">+20 102 893 4568</a>
-                    </div>
-
-                    <div class="contact-box">
-                        <div class="icon"><i class="fab fa-linkedin-in"></i></div>
-                        <h4>LinkedIn</h4>
-                        <a href="https://www.linkedin.com/in/alma8raby" target="_blank">Connect on LinkedIn</a>
-                    </div>
-
-                    <div class="contact-box">
-                        <div class="icon"><i class="fab fa-github"></i></div>
-                        <h4>GitHub</h4>
-                        <a href="https://github.com/alma8raby" target="_blank">View Portfolio</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>Designed & Built by <strong>Ibrahim Abduljawad</strong> © 2026</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
