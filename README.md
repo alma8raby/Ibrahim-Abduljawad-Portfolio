@@ -315,5 +315,3 @@ This makes the database safe for public exploration and team collaboration.
   * its purpose
   * analytical objective
   * expected insight
-
-```
