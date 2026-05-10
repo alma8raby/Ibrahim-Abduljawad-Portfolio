@@ -177,8 +177,8 @@ import pandas as pd
 url = "https://fzjzfclrgoqdhrskekyp.supabase.co/rest/v1/egypt_data?limit=100"
 
 headers = {
-    "apikey": "YOUR_ANON_KEY",
-    "Authorization": "Bearer YOUR_ANON_KEY"
+    "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ6anpmY2xyZ29xZGhyc2tla3lwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc2Mzc3NjAsImV4cCI6MjA5MzIxMzc2MH0.rTyRL9xzfQ7exKN8tQF-WYqSJclw--cXNfw6Pjzapp0",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ6anpmY2xyZ29xZGhyc2tla3lwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc2Mzc3NjAsImV4cCI6MjA5MzIxMzc2MH0.rTyRL9xzfQ7exKN8tQF-WYqSJclw--cXNfw6Pjzapp0"
 }
 
 response = requests.get(url, headers=headers)
@@ -316,5 +316,4 @@ This makes the database safe for public exploration and team collaboration.
   * analytical objective
   * expected insight
 
-```
 ```
