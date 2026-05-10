@@ -1,4 +1,4 @@
-````md
+
 # SQL Analysis & Live Database Access
 
 To support scalable analysis and collaborative experimentation, the project database was deployed online using Supabase PostgreSQL.
